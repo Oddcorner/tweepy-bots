@@ -103,7 +103,7 @@ def post_picture(api, pic):
 
 def main():
     api = create_api()
-    # update_latest_tweet_id_str(api)
+    update_latest_tweet_id_str(api)
     while True:
         tweet = get_latest_tweet(api)
         pic = generate_pic(tweet)
