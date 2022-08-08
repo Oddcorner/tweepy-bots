@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # tweepy-bots/bots/generatepictures.py
-
-from xml.etree.ElementInclude import include
 from requests import get
-import tweepy
 import logging
 from config import create_api
 import time
