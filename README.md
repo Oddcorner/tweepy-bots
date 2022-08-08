@@ -23,3 +23,12 @@ AI_KEY={YOUR_DEEPAI_API_KEY}
 ```
 
 Then simply run `python generatepictures.py` to start the bot.
+
+## Future Improvements
+
+- Utilise threading to handle higher volumes of tweets at a time
+- Use Monads instead of passing and checking for "None"
+
+## Acknowledgments
+
+This project was adapted from the guide [How to make a twitter bot in Python](https://realpython.com/twitter-bot-python-tweepy/).
