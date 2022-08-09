@@ -38,9 +38,9 @@ def get_latest_tweet(api):
 def update_latest_tweet_id_str(api):
     global latest_tweet_id_str
     tweets_list = []
-    logger.info("Retrieving lastest tweet from " + username)
+    logger.info("Updating lastest tweet from " + username)
     try:
-        tweets_list = api.user_timeline(screen_name=username, count=1)
+        tweets_list = api.user_timeline(screen_name=username, count=1, include_rts=False, exclude_replies=True)
     except Exception as e:
         logger.error("Error fetching user tweets", exc_info=True)
         raise e
